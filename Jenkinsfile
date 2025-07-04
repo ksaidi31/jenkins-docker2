@@ -31,9 +31,7 @@ pipeline {
 
 	post {
 		always {
-			script {
-				sh 'docker logout'
-			}
+			sh 'docker logout'
 		}
 	}
 }
