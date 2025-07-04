@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t ksaidi/jenkins-docker .'
+        sh 'docker build -t ksaidi/image_docker .'
       }
     }
 
@@ -24,7 +24,7 @@ pipeline {
 
     stage('Push') {
       steps {
-        sh 'docker push ksaidi/ksa_repo'
+        sh 'docker push ksaidi/image_docker'
       }
     }
   }
